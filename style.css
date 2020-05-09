@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif, "Source Sans Pro";
+    background-image: url("./Pictures/Background.png");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  max-width: 60%;
+  margin: auto;
+  background-image: url(./Pictures/CardBackground.png);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 #000000;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 16px 16px;
+  border-color: antiquewhite;
+  color: antiquewhite;
+}
+
+.form-control {
+  background-image: url(./Pictures/ExtraBackground.png);
+}
+
+::placeholder {
+  color: lightpink !important;
+  opacity: 1;
+}
+
+p{
+    text-align: center;
+}
+
+#carouselExampleFade {
+    margin: auto;
+}
+
+#carouselExampleFade img {
+    max-width: 70%;
+    max-height: 70%;
+    margin: auto;
+  }
