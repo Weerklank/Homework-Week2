@@ -1,16 +1,20 @@
 body {
-    font-family: sans-serif, "Source Sans Pro";
-    background-image: url("./Pictures/Background.png");
+  font-family: sans-serif, "Source Sans Pro";
+  background-image: url("./Pictures/Background.png");
+  color:lightpink;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 16px 16px;
+  border-color: antiquewhite;
+  color: antiquewhite;
+  margin: auto;
   }
 
 .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   max-width: 60%;
@@ -18,16 +22,15 @@ body {
   background-image: url(./Pictures/CardBackground.png);
 }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 #000000;
+.img-fluid {
+  border-radius: 100px;
+  border: solid 20px #754c66;
+  margin: 20px;
+  margin-left: 0px;
 }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 16px 16px;
-  border-color: antiquewhite;
-  color: antiquewhite;
+.img-fluid:hover {
+  transform: scale(1.1);
 }
 
 .form-control {
@@ -36,15 +39,15 @@ body {
 
 ::placeholder {
   color: lightpink !important;
-  opacity: 1;
 }
 
-p{
-    text-align: center;
+p, h1{
+  text-align: center;
+  font-weight: bold;
 }
 
 #carouselExampleFade {
-    margin: auto;
+  margin: auto;
 }
 
 #carouselExampleFade img {
