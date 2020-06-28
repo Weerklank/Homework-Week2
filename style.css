@@ -1,7 +1,13 @@
 body {
   font-family: sans-serif, "Source Sans Pro";
   background-image: url("./Pictures/Background.png");
-  color:lightpink;
+  color: lightpink;
+}
+
+a {
+  font-family: sans-serif, "Source Sans Pro";
+  color: pink;
+  text-align: center;
 }
 
 .container {
@@ -12,14 +18,41 @@ body {
   border-color: antiquewhite;
   color: antiquewhite;
   margin: auto;
-  }
+}
+
+.divider {
+  font-size: 30px;
+  margin: -0.65em auto -0.45em;
+  overflow: hidden;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.divider:before,
+.divider:after {
+  content: "";
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 0.65em;
+  border-bottom: 3px solid #fff;
+  margin: 0 2% 0 -55%;
+}
+
+.divider:after {
+  margin: 0 -55% 0 2%;
+}
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   max-width: 60%;
   margin: auto;
   background-image: url(./Pictures/CardBackground.png);
+}
+
+.col-sm-6 {
+  margin-top: 5%;
 }
 
 .img-fluid {
@@ -27,6 +60,7 @@ body {
   border: solid 20px #754c66;
   margin: 20px;
   margin-left: 0px;
+  display: inline-block;
 }
 
 .img-fluid:hover {
@@ -41,7 +75,8 @@ body {
   color: lightpink !important;
 }
 
-p, h1{
+p,
+h1 {
   text-align: center;
   font-weight: bold;
 }
@@ -51,7 +86,7 @@ p, h1{
 }
 
 #carouselExampleFade img {
-    max-width: 70%;
-    max-height: 70%;
-    margin: auto;
-  }
+  max-width: 70%;
+  max-height: 70%;
+  margin: auto;
+}
