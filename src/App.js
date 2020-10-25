@@ -10,24 +10,15 @@ import './css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  console.log(Main)
   return (
     <BrowserRouter>
       <Nav />
-      <Main />
+      <Index/>
+      <Portfolio/>
+      <Contact/>
       <Footer />
     </BrowserRouter>
   );
-}
-
-function Main(){
-  return (
-    <Switch>
-       <Route exact path='/contact' component={Contact} />
-       <Route exact path='/portfolio' component={Portfolio} />
-       <Route exact path='/' component={Index} />
-    </Switch>
-  )
 }
 
 

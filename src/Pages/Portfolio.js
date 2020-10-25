@@ -79,7 +79,7 @@ export default function Portfolio(){
     ]
 
     return (
-        <div className="projContainer">
+        <div id="portfolio" className="projContainer">
         {projects.map(({ type, name, deployed, src, alt, repo }) => {
             return (
             <Project type={type} name={name} deployed={deployed} src={src} alt={alt} repo={repo} />

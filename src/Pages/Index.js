@@ -5,7 +5,7 @@ export default function Index(){
 
 
     return (
-        <div className="card">
+        <div id="index" className="card">
             <Carousel/>
             <div class="container">
                 <h1><b>Hi! My name is Echo</b></h1>

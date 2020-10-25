@@ -4,7 +4,7 @@ export default function Index(){
 
 
     return (
-    <div class="container">
+    <div id="contact" class="container">
         <div class="card w-75">
             <div class="card-body">
                 <h1>Contact</h1>
