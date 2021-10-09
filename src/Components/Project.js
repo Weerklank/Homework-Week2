@@ -6,9 +6,9 @@ export default function Project(props){
     return (
         <div class="col-sm-4">
             <h2 class="divider">{props.name}</h2>
-            <a href={props.deployed}>
+            <a href={props.deployed} target="_blank" rel="noopener noreferrer">
                 <img class="img-fluid port-image" src={props.src} alt={props.alt} />
-            </a><h2 class="divider"><a href={props.repo}>The Repository</a></h2>
+            </a><h2 class="divider"><a href={props.repo} target="_blank" rel="noopener noreferrer">The Repository</a></h2>
         </div>
     )}
     else if (props.type === "image") {

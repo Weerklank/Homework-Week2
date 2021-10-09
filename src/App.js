@@ -12,14 +12,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <BrowserRouter>
-      <Nav />
-      <Index/>
-      <Portfolio/>
-      <Contact/>
+      <Nav/>
+      <Main/>
       <Footer />
     </BrowserRouter>
   );
 }
+
+
+function Main(){
+  return (
+    <Switch>
+      <Route exact path='/' component={Index} />
+      <Route exact path='/portfolio' component={Portfolio} />
+      <Route exact path='/contact' component={Contact} />
+    </Switch>
+  )
+}
+
 
 
 
